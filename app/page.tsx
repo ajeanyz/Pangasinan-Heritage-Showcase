@@ -4,6 +4,8 @@ import { HeaderNavigation } from "@/components/organisms/HeaderNavigation";
 import { HeritageGrid } from "@/components/organisms/HeritageGrid";
 import { heritageSites } from "@/data/heritage-sites";
 
+const basePath = process.env.NODE_ENV === "production" ? "/Pangasinan-Heritage-Showcase" : "";
+
 export default function Home() {
   return (
     <main>
@@ -11,7 +13,7 @@ export default function Home() {
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-orb hero-orb-one" aria-hidden="true" />
         <div className="hero-orb hero-orb-two" aria-hidden="true" />
-        <img className="hero-mascot" src="/images/hello-kitty-travel-hero.webp" alt="Cute white cat traveler with a red bow, tropical islands, flowers, waves, and a lighthouse" width="1200" height="800" loading="eager" fetchPriority="high" decoding="async" />
+        <img className="hero-mascot" src={`${basePath}/images/hello-kitty-travel-hero.webp`} alt="Cute white cat traveler with a red bow, tropical islands, flowers, waves, and a lighthouse" width="1200" height="800" loading="eager" fetchPriority="high" decoding="async" />
         <div className="container hero-content">
           <p className="eyebrow">♡ A sweet Pangasinan adventure ♡</p>
           <h1 id="hero-title">Say hello to<span>Pangasinan!</span></h1>
