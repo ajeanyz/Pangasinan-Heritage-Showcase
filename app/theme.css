@@ -149,8 +149,9 @@ h1 span {
 }
 .hero-stats {
   position: relative;
-  z-index: 4;
+  z-index: 10;
   width: max-content;
+  max-width: 100%;
   padding: 18px 24px;
   border: 3px solid #f5afc2;
   border-radius: 26px;
@@ -159,9 +160,12 @@ h1 span {
   margin-top: 38px;
 }
 .hero-mascot {
+  position: absolute;
+  z-index: 1;
   right: -5%;
   bottom: -55px;
   width: min(54vw, 760px);
+  pointer-events: none;
 }
 .hero-stats div {
   border-right-color: #f3b3c5;
@@ -169,6 +173,14 @@ h1 span {
 .hero-stats dd {
   color: #e83261;
   font-weight: 700;
+}
+.hero-stats dt {
+  white-space: normal;
+  display: block;
+  max-width: 70px;
+}
+.hero-stats dt span {
+  display: block;
 }
 .kawaii-card {
   position: absolute;

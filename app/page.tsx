@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { ArrowDown } from "lucide-react";
 import { ButtonLink } from "@/components/atoms/Button";
 import { HeaderNavigation } from "@/components/organisms/HeaderNavigation";
@@ -13,7 +14,7 @@ export default function Home() {
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-orb hero-orb-one" aria-hidden="true" />
         <div className="hero-orb hero-orb-two" aria-hidden="true" />
-        <img className="hero-mascot" src={`${basePath}/images/hello-kitty-travel-hero.webp`} alt="Cute white cat traveler with a red bow, tropical islands, flowers, waves, and a lighthouse" width="1200" height="800" loading="eager" fetchPriority="high" decoding="async" />
+        <img className="hero-mascot" src={`${basePath}/images/hello-kitty-travel-hero.webp`} alt="Cute white cat traveler with a red bow, tropical islands, flowers, waves, and a lighthouse" width="400" height="400" loading="eager" fetchPriority="high" decoding="async" />
         <div className="container hero-content">
           <p className="eyebrow">♡ A sweet Pangasinan adventure ♡</p>
           <h1 id="hero-title">Say hello to<span>Pangasinan!</span></h1>
@@ -23,7 +24,7 @@ export default function Home() {
             <a className="text-link" href="#about">Our cultural story <ArrowDown size={18} aria-hidden="true" /></a>
           </div>
           <dl className="hero-stats" aria-label="Showcase highlights">
-            <div><dt>Featured places</dt><dd>6</dd></div>
+            <div><dt>Featured <span>places</span></dt><dd>6</dd></div>
             <div><dt>Coastline</dt><dd>285 km</dd></div>
             <div><dt>Languages</dt><dd>3+</dd></div>
           </dl>
