@@ -154,8 +154,14 @@ h1 span {
   padding: 18px 24px;
   border: 3px solid #f5afc2;
   border-radius: 26px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.96);
   box-shadow: 8px 8px 0 #ffcada;
+  margin-top: 38px;
+}
+.hero-mascot {
+  right: -5%;
+  bottom: -55px;
+  width: min(54vw, 760px);
 }
 .hero-stats div {
   border-right-color: #f3b3c5;
@@ -451,8 +457,9 @@ footer {
     max-width: 62%;
   }
   .hero-mascot {
-    right: -19%;
-    width: 75vw;
+    right: -16%;
+    bottom: -45px;
+    width: 62vw;
     opacity: 0.82;
   }
 }
@@ -486,16 +493,15 @@ footer {
     font-size: clamp(3.55rem, 18vw, 5.2rem);
   }
   .hero-mascot {
-    right: -25%;
-    bottom: 20px;
-    width: 125vw;
-    opacity: 0.58;
+    right: -30%;
+    bottom: -35px;
+    width: 100vw;
+    opacity: 0.42;
   }
   .hero-stats {
-    position: relative;
-    z-index: 4;
     width: 100%;
     padding: 15px 10px;
+    margin-top: 30px;
     box-shadow: 5px 6px 0 #ffcada;
   }
   .grid-tools {
